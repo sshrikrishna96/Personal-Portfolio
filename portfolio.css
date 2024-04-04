@@ -102,7 +102,7 @@ nav ul li a:hover::after{
     flex-basis: 60%;
     padding: 0px;
     /* transition: cubic-bezier(0.215, 0.610, 0.355, 1); */
-    margin: 20px -50px;
+    margin: -40px -50px;
 }
 
 .sub-title{
@@ -168,10 +168,10 @@ nav ul li a:hover::after{
     display: block;
 }
 
-/* ---------------services--------------- */
+/* ---------------projects--------------- */
 
-#services{
-    padding: 30px 0;
+#projects{
+    padding: 50px 0;
 }
 
 h1.sub_title{
@@ -181,14 +181,14 @@ h1.sub_title{
     text-align: center;
 }
 
-.services-list{
+.projects-list{
     display: grid;
     grid-template-columns: repeat(auto-fit , minmax(250px, 1fr));
     grid-gap: 40px;
-    margin-top: 70px;
+    margin-top: 50px;
 }
 
-.services-list div{
+.projects-list div{
     background: #262626;
     padding: 40px;
     font-weight: 300;
@@ -196,21 +196,22 @@ h1.sub_title{
     transition: background 0.5s , transform 0.5s;
 }
 
-.services-list div i{
+.projects-list div i{
     font-size: 50px;
     margin-bottom: 30px;
 }
 
-.services-list p{
+.projects-list p{
     margin-top: 15px;
 }
 
-.services-list div h2{
+.projects-list div h2{
     font-size: 30px;
     font-weight: 500px;
+    margin-bottom: 10%;
 }
 
-.services-list div a{
+.projects-list div a{
     text-decoration: none;
     color: #fff;
     font-size: 12px;
@@ -218,26 +219,42 @@ h1.sub_title{
     display: inline-block;
 }
 
-.services-list div:hover{
+.projects-list div:hover{
     background-color: #f16f2f;
     transform: translateX(-10px);
 }
 
-/* ---------------portfolio--------------- */
+/* ---------------resume--------------- */
 
-#portfolio{
+#resume{
     padding: 50px 0;
 }
 .work_list{
     display: grid;
     grid-template-columns: repeat(auto-fit , minmax(250px, 1fr));
     grid-gap: 40px;
-    margin-top: 70px;
+    margin-top: 50px;
+    align-items: center;
+    align-content: center;
+}
+.work_list h2{
+    font-size: 50px;
+    margin-bottom: 241px;
+    margin-left: 80px;
+}
+.work_list h2 p{
+    font-size: 20px;
+    margin-top: 80px;
+    color: #f16f2f;
 }
 .work{
     border-radius: 10px;
     position: relative;
     overflow: hidden;
+    height: 550px;
+    width: 550px;
+    align-items: center;
+    align-content: center;
 }
 .work img{
     width: 100%;
@@ -259,4 +276,118 @@ h1.sub_title{
     flex-direction: column;
     padding: 0 40px;
     text-align: center;
+}
+
+/* ---------------contact--------------- */
+
+#contact{
+    padding: 50px 0;
+}
+.row{
+    margin-top: 50px;
+}
+h1.sub-title1{
+    font-size: 46px;
+    font-weight: 600px;
+    color: #ffffff;
+    text-align: center;
+    margin-left: -15px;
+}
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
+    color: #f16f2f;
+    margin-right: 15px;
+    font-size: 25px;
+    transition: transform 0.5s;
+}
+.contact-left p i:hover{
+    color: #c5c5c5;
+    transform: translateY(-5px);
+}
+.contact-left h1{
+    text-align: left;
+    padding: 15px 0px 15px;
+}
+.social-media{
+    margin-top: 30px;
+}
+.social-media a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #c5c5c5;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-media a:hover{
+    color: #f16f2f;
+    transform: translateY(-5px);
+}
+.btn.btn2{
+    display: inline-block;
+    background: #f16f2f;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-left: -2px;
+    padding: 14px;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.5s;
+}
+.btn.btn2:hover{
+    background-color: #c5c5c5;
+    transform: translateY(-5px);
+}
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+.contact-left .btn2{
+    cursor: pointer;
+}
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+/* ---------------copyright--------------- */
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.copyright i{
+    color: red;
+}
+
+/* ---------------CSS for small screen--------------- */
+@media only screen  and (max-width: 600px){
+    #header{
+        background-image: url();
+    }
 }
