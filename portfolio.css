@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@1,900&display=swap');
 *{
-    padding: 0%;
-    margin: 0%;
     box-sizing: border-box;
 }
 
@@ -10,20 +8,23 @@ html{
 }
 
 body{
+    margin: 0px;
+    padding: 0px;
     background-color: black;
     color: aliceblue;
 }
 
 #header{
-    width: 100vw;
-    height: 100vh;
-    background-image: url(Shri\ Krishna\ Image.jpg);
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
     background-size: cover;
     background-position: center;
-}
-
-.container{
-    padding: 0% 10%;
+    position: sticky;
+    top: 0%;
+    background: linear-gradient(rgba(0,0,0,0), #d2beb5);
+    z-index: 2;
+    /* height: 50px; */
 }
 
 nav{
@@ -67,8 +68,25 @@ nav ul li a:hover::after{
 }
 
 .header-text{
-    margin-top: 130px;
+    margin-top: 100px;
+    margin-bottom: 110px;
     font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.main-img{
+    width: 270px;
+    height: 300px;
+    background-color:rgb(218, 218, 198);
+    border-radius: 50%;
 }
 
 .header-text h1{
@@ -82,24 +100,25 @@ nav ul li a:hover::after{
 
 /* ---------------about--------------- */
 #about{
-    padding: 120px 0;
+    padding: 10px 0;
     color: rgb(255, 255, 255);
+    margin-bottom: 100px;
 }
 
 .row{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
+    padding-left: 50px;
+    padding-right: 50px;
+    align-items: flex-start;
 }
 
-.about-col-1{
-    flex-basis: 30%;
-}
-
-.about-col-1 img{
-    width: 100%;
-    border-radius: 15px;
-    margin: -50px 80px;
+.about-img{
+    width: 230px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: #ffffff;
 }
 
 .about-col-2{
@@ -113,12 +132,13 @@ nav ul li a:hover::after{
     font-size: 46px;
     font-weight: 600px;
     color: #ffffff;
-    padding: 0px 0px 80px;
+    margin-bottom: 90px;
     text-align: center;
 }
 
 .about-col-2 p{
     font-size: 17px;
+    text-align: justify;
 }
 
 .tab-title{
@@ -155,11 +175,37 @@ nav ul li a:hover::after{
     width: 100%;
 }
 
+.main-list{
+    text-align: left;
+    padding-left: 0px;
+}
+
+.experience-list{
+    text-align: left;
+    padding-left: 0px;
+    margin-left: -20px;
+}
+
+.education-list{
+    text-align: left;
+    padding-left: 0px;
+    margin-left: -20px;
+}
+
+.tab-contents ul{
+    text-align: left;
+    padding-left: 20px;
+}
+
 .tab-contents ul li{
-    list-style: none;
     margin: 10px 0px;
 }
+
 .tab-contents ul li span{
+    color: #f16f2f;
+}
+
+.tab-contents div span{
     color: #f16f2f;
     font-size: 17px;
 }
@@ -175,7 +221,7 @@ nav ul li a:hover::after{
 /* ---------------projects--------------- */
 
 #projects{
-    padding: 50px 0;
+    padding: 10px 0;
 }
 
 h1.sub_title{
@@ -230,45 +276,37 @@ h1.sub_title{
 
 /* ---------------resume--------------- */
 
-#resume{
-    padding: 50px 0;
-}
-.work_list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit , minmax(250px, 1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
+.resume-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
-    align-content: center;
+    gap: 0px;
+    margin-bottom: 12px;
 }
-.work_list h2{
-    font-size: 50px;
-    margin-bottom: 241px;
-    margin-left: 80px;
-}
-.work_list h2 p{
-    font-size: 20px;
-    margin-top: 80px;
-    color: #f16f2f;
-}
+
 .work{
     border-radius: 10px;
     position: relative;
     overflow: hidden;
-    height: 550px;
-    width: 550px;
+    height: 520px;
+    width: 420px;
     align-items: center;
     align-content: center;
 }
 .work img{
     width: 100%;
+    position: absolute;
     display: block;
     border-radius: 10px;
+    align-items: center;
+    align-content: center;
+    top: 10px;
 }
 .layer{
     width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(0,0,0,0.6), #f16f2f);
+    height: 550px;
+    background: linear-gradient(rgba(0,0,0,0), #f16f2f);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -285,7 +323,7 @@ h1.sub_title{
 /* ---------------contact--------------- */
 
 #contact{
-    padding: 50px 0;
+    padding: 10px 0;
 }
 .row{
     margin-top: 50px;
@@ -345,10 +383,12 @@ h1.sub-title1{
     text-align: center;
     border-radius: 10px;
     transition: transform 0.5s;
+    color: white;
 }
 .btn.btn2:hover{
-    background-color: #c5c5c5;
+    background-color: white;
     transform: translateY(-5px);
+    color: #262626;
 }
 .contact-right form{
     width: 100%;
@@ -379,7 +419,7 @@ form .btn2{
 .copyright{
     width: 100%;
     text-align: center;
-    padding: 25px 0;
+    padding: 0.5px 0px;
     background: #262626;
     font-weight: 300;
     margin-top: 20px;
@@ -390,8 +430,157 @@ form .btn2{
 }
 
 /* ---------------CSS for small screen--------------- */
-@media only screen  and (max-width: 600px){
+@media only screen  and (max-width: 800px){
     #header{
-        background-image: url();
+        position: relative;
+    }
+    .logo{
+        width: 100px;
+    }
+    
+    #main-heading{
+        padding-bottom: 110px;
+    }
+
+    .main-img{
+        height: 200px;
+        margin-left: 60px;
+    }
+    .header-text{
+        margin-top: 130px;
+        font-size: 20px;
+    }
+    .header-text h1{
+        margin-top: 20px;
+        font-size: 40px;
+    }
+    
+    #about{
+        padding-bottom: 110px;
+    }
+
+    #about h1{
+        margin-bottom: 0px;
+        padding-left: 100px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .about-img{
+        margin-left: 95px;
+        width: 150px;
+        height: 150px;
+    }
+
+    .about-col-2{
+        margin-left: 15px;
+        margin-top: 40px;
+    }
+    .about-col-1{
+        flex-basis: 30%;
+    }
+
+    #projects{
+        padding-bottom: 110px;
+    }
+
+    #projects h1{
+        padding-left: 109px;
+    }
+
+    .projects-list{
+        margin-left: 80px;
+        grid-template-columns: none;
+    }
+
+    #resume{
+        padding-bottom: 110px;
+    }
+    
+    .work{
+        margin-top: 50px;
+        margin-left: 50px;
+    }
+    .work img{
+        width: 91%;
+        height: 100%;
+        top: 0px;
+    }
+    .layer{
+        width: 91%;
+        height: 100%;
+        top: 0px;
+    }
+
+    .sub-title1{
+        margin-bottom: 0px;
+    }
+
+    #contact{
+        padding-bottom: 110px;
+    }
+
+    .sub-title1{
+        padding-left: 110px;
+        text-align: center;
+    }
+
+    .contact-left{
+        position: relative;
+        bottom: 160px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background-color: #635f5d; */
+        flex-direction: column;
+    }
+
+    .contact-left h1{
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .contact-left p{
+        font-size: 25px;
+    }
+
+    .personal{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        padding-left: 20px;
+        width: 400px;
+    }
+
+    .social-media{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .social-links{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info{
+        width: 400px;
+        height: 15px;
+    }
+
+    .contact-right form{
+        width: 350px;
+    }
+
+    .contact-right .btn.btn2{
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .copyright{
+        width: 470px;
     }
 }

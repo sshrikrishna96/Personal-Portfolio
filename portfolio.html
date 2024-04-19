@@ -11,30 +11,33 @@
     <div id="header">
         <div class="container">
             <nav>
-                <img src="logo.png" class="logo">
+                <a href="#main-heading"><img src="logo.png" class="logo" style="max-width: 100%; height: auto;"></a>
                 <ul>
-                    <li><a href="#header">Home</a></li>
+                    <li><a href="#main-heading">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#resume">Resume</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-            <div class="header-text">
-                <p>Front-End Developer</p>
-                <h1>Hi, I'm  <span>Shri Krishna</span> <br>Sharma From India</h1>
-            </div>
         </div>     
+    </div>
+<!---------------main heading---------------> 
+    <div id="main-heading" class="header-text">
+        <div>
+            <p>Front-End Developer</p>
+            <h1>Hi, I'm  <span>Shri Krishna</span> <br>Sharma From India</h1>
+        </div>
+        <img src="Shri Krishna Sharma Image.png" class="main-img">
     </div>
 
 <!---------------about---------------> 
 
 <div id="about">
     <h1 class="sub-title">About Me</h1>
-    <div class="container">
         <div class="row">
             <div class="about-col-1">
-                <img src="Shri Krishna Image - Copy.jpg">
+                <img src="Shri Krishna Sharma Image.png" class="about-img">
             </div>
             <div class="about-col-2">
                 <p>Welcome to my portfolio! I'm Shri Krishna Sharma, a passionate individual currently pursuing a Bachelor's in Technology from GL Bajaj Institute of Technology and Management, specializing in Electronics and Communication Engineering (ECE). While my academic focus lies in ECE, my heart beats for technology in all its forms.
@@ -56,28 +59,28 @@
                     <p class="tab-links" onclick="opentab('Education')">Education</p>
                 </div>
                 <div class="tab-contents active-tab" id="Skills">
-                    <ul>
-                        <li><span><h2>Web Development</h2></span></li>
-                        <ul>   
+                    <div class="main-list">
+                        <span><h2>Web Development</h2></span>
+                        <ul style="color:rgb(255, 255, 255); list-style-type:disc;">   
                             <li>HTML</li>
                             <li>CSS</li>
                             <li>JavaScript</li>
                         </ul>
-                        <li><span><h2>Programming Languages</h2></span></li>
+                        <span><h2>Programming Languages</h2></span>
                         <ul>   
                             <li>C++</li>
                             <li>C</li>
                             <li>Python</li>
                         </ul>
-                        <li><span><h2>Database Management System</h2></span></li>
+                        <span><h2>Database Management System</h2></span>
                         <ul>   
                             <li>MySQL Workbench</li>
                             <li>SQL</li>
                         </ul>
-                    </ul>
+                    </div>
                 </div>
                 <div class="tab-contents" id="Experience">
-                    <ul>
+                    <ul style="list-style-type:none;" class="experience-list">
                         <li>
                             <span><h2>Infosys</h2></span>
                             <b><i><u>Online Summer Training Program on Python</u></i></b>
@@ -106,7 +109,7 @@
                     </ul>
                 </div>
                 <div class="tab-contents" id="Education">
-                    <ul>
+                    <ul style="list-style-type:none;" class="education-list">
                         <li>
                             <span><h2>Bachelor of Technology (B.Tech)</h2></span>
                             <b><u>G.L.Bajaj Institute of Technology and Management</u></b>
@@ -133,7 +136,6 @@
                 </div>
             </div>
         </div>
-    </div>
 </div>
 
 <!---------------projects---------------> 
@@ -172,23 +174,14 @@
 
 <!---------------resume---------------> 
 <div id="resume">
-    <div class="container">
+    <div class="resume-container">
         <h1 class="sub_title">Resume</h1>
-        <div class="work_list">
-            
-            <h2>
-                My Resume
-                <br>
-                <p><i><u>Click on the button to open my resume</u></i></p>
-            </h2>            
-
             <div class="work">
                 <img src="work-1.png">
                 <div class="layer">
                     <a href="https://drive.google.com/file/d/1ohuvgEUr55mboYsauDIiNvlkfXvE1mWX/view?usp=sharing"><i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
             </div>
-        </div>
     </div>
 </div>
 
@@ -199,15 +192,17 @@
         <div class="row">
             <div class="contact-left">
                 <h1 class="sub-title">Contact Me!</h1>
-                <p><a href="mailto:sshrikrishna96@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>sshrikrishna96@gmail.com</p>
-                <p><a href="tel:+919457609245"><i class="fa fa-phone-square" aria-hidden="true"></i></a>+919457609245</p>
-                <div class="social-media">
-                    <a href="https://www.linkedin.com/in/shri-krishna-sharma-329253166/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-                    <a href="https://twitter.com/shrikrishnasha4"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-                    <a href="https://www.instagram.com/shri_krishna_sh/#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <div class="personal">
+                    <p class="info"><a href="mailto:sshrikrishna96@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>sshrikrishna96@gmail.com</p>
+                    <p class="info"><a href="tel:+919457609245"><i class="fa fa-phone-square" aria-hidden="true"></i></a>+919457609245</p>
                 </div>
-                <!-- <a href="/Portfolio/Shri Krishna Sharma Resume_pdf.pdf" class="btn btn2" download>Download CV</a> -->
-                <a href="/Portfolio/Shri Krishna Sharma Resume_pdf.pdf" download><button type="download" class="btn btn2">Download CV</button></a>
+                <div class="social-media">
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/shri-krishna-sharma-329253166/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                        <a href="https://twitter.com/shrikrishnasha4"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                    </div>
+                    <a href="/Portfolio/Shri Krishna Sharma Resume_pdf.pdf" download><button type="download" class="btn btn2">Download CV</button></a>
+                </div>
             </div>
             <div class="contact-right">
                 <form>
@@ -241,6 +236,7 @@
         document.getElementById(tabname).classList.add("active-tab");
     }
 </script>
+<script src="portfolio.js"></script>
 
 </body>
 </html>
